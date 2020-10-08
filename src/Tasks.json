@@ -1,0 +1,22 @@
+{
+    "tarea":[
+        {
+            "title": "tarea 1",
+            "responsible": "Marta",
+            "description": "cambiar los colores",
+            "priority": "low"
+        },
+        {
+            "title": "tarea 2",
+            "responsible": "Lorenzo",
+            "description": "Hacer una animacion",
+            "priority": "medium"
+        },
+        {
+            "title": "tarea 3",
+            "responsible": "Bob",
+            "description": "programar los botones",
+            "priority": "high"
+        }
+    ]
+}

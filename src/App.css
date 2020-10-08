@@ -1,0 +1,32 @@
+.card{
+  background-color: rgba(111, 34, 211, 0.267);
+}
+
+.App-logo {
+  height: 100px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 4s linear;
+  }
+}
+
+.App-header {
+  background-color: #5a00af77;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.692);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
