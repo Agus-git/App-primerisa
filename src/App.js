@@ -14,7 +14,7 @@ class App extends Component {
     }
   }
   render()  { 
-    const tareas = this.state.tareas.map((task, index) => { 
+    var tareas = this.state.tareas.map((task, index) => { 
       return (
       <div className="col-sm-3">
       <div className= "card">
@@ -33,6 +33,9 @@ class App extends Component {
       </div>
       </div>
     )})
+    
+    
+
     return(
     <div className="App">
       <nav className= "navbar navbar-dark bg-dark">

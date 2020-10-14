@@ -9,11 +9,22 @@ class TaskForm extends Component
             responsible: "",
             description: "",
             priority: "low",
-        }
+        };
+        this.cambiador = this.cambiador.bind(this);
+        this.ButtonEffect = this.ButtonEffect.bind(this); 
     }
 
-    cambiador() {
-        
+    cambiador(e) {
+        var value = e.target.value;
+        var name = e.target.name;
+        this.setState({
+            [name]: value
+        })
+    }
+
+    ButtonEffect(e)
+    {
+        console.log(this.state);
     }
 
     render (){
@@ -52,14 +63,20 @@ class TaskForm extends Component
                         />
                     </div>
                     <div className="form-group">
-                        <input
-                            type="text"
+                        <select 
                             name="priority"
                             onChange = {this.cambiador}
                             className="form-control"
                             placeholder="Prioridad"
-                        />
+                        >
+                        <option>low</option>
+                        <option>medium</option>
+                        <option>high</option>
+                        </select>
                     </div>
+                    <button onClick={this.ButtonEffect} type="button" class="btn btn-primary btn-lg btn-block">
+                        Guardar
+                    </button>
                 </div>
             </div>
             </div> 
