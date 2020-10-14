@@ -1,6 +1,9 @@
 .card{
   background-color: rgba(111, 34, 211, 0.267);
 }
+.priorityid{
+  text-align: end;
+}
 
 .App-logo {
   height: 100px;

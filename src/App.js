@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TaskForm from "./Component/TaskForm";
+
 import { tarea } from "./Tasks.json";
 
 class App extends Component {
@@ -12,11 +14,15 @@ class App extends Component {
     }
   }
   render()  { 
-    const tareas = this.state.tareas.map((task, index) => { return (
+    const tareas = this.state.tareas.map((task, index) => { 
+      return (
       <div className="col-sm-3">
       <div className= "card">
         <div className="card-header">
-          <h2>{task.title}</h2>
+          <h2>
+            <b>{task.title}  </b>
+            <i id= "priorityid"><span className= "badge badge-pill badge-primary">{task.priority}</span></i>
+          </h2>
         </div>
         <div className="card-body">
           <h5>{task.description}</h5>
@@ -31,7 +37,7 @@ class App extends Component {
     <div className="App">
       <nav className= "navbar navbar-dark bg-dark">
       <a href = "" className = "text-white">
-        tarea({tareas.length})
+        tarea<span className= "badge badge-pill badge-light">{tareas.length}</span>
       </a>
     </nav>
       <header className="App-header">
@@ -42,9 +48,11 @@ class App extends Component {
       <div className="row mt-4">
         {tareas}
       </div>
+      <div className="row mt-4">
+        <TaskForm/>
+      </div>
     </div>
   );
 }
 }
-
 export default App;

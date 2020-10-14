@@ -1,12 +1,6 @@
 {
     "tarea":[
         {
-            "title": "tarea 1",
-            "responsible": "Marta",
-            "description": "cambiar los colores",
-            "priority": "low"
-        },
-        {
             "title": "tarea 2",
             "responsible": "Lorenzo",
             "description": "Hacer una animacion",
@@ -17,6 +11,12 @@
             "responsible": "Bob",
             "description": "programar los botones",
             "priority": "high"
+        },
+        {
+            "title": "tarea 4",
+            "responsible": "Richo",
+            "description": "Dibujar un robot",
+            "priority": "low"
         }
     ]
 }
